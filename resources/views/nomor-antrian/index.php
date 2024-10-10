@@ -43,7 +43,7 @@
         <div class="ms-5 ms-md-0 pt-md-3 pb-md-0">
           <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
             <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="../index.php"><i class="bi-house-fill text-success"></i></a></li>
+              <li class="breadcrumb-item"><a href="/"><i class="bi-house-fill text-success"></i></a></li>
               <!-- <li class="breadcrumb-item" aria-current="page">Dashboard</li> -->
               <li class="breadcrumb-item" aria-current="page">Antrian</li>
             </ol>
@@ -73,7 +73,7 @@
                 <h1 id="antrian" class="display-1 fw-bold text-success text-center lh-1 pb-2"></h1>
               </div>
               <!-- button pengambilan nomor antrian -->
-              <a id="insert"href="index_done.php" class="btn btn-success btn-block rounded-pill fs-5 px-5 py-4 mb-2">
+              <a id="insert"href="/index_done" class="btn btn-success btn-block rounded-pill fs-5 px-5 py-4 mb-2">
                 <i class="bi-person-plus fs-4 me-2"></i> Ambil Nomor
               </a>
             </div>

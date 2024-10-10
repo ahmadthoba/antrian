@@ -1,33 +1,3 @@
-<?php
-session_start(); // Mulai session
-
-// Koneksi ke database
-require_once "../connection.php";
-
-// Pastikan user sudah login
-if (!isset($_SESSION['username'])) {
-    // Redirect ke halaman login jika belum login
-    header("Location: index.php");
-    exit();
-}
-
-// Ambil email dari session
-$username = $_SESSION['username'];
-
-// Ambil data user berdasarkan email
-$query = mysqli_query($mysqli, "SELECT * FROM tbl_user WHERE username='$username'")
-                               or die('Ada kesalahan pada query: ' . mysqli_error($mysqli));
-
-// Cek jika data ditemukan
-if (mysqli_num_rows($query) > 0) {
-    $data_user = mysqli_fetch_assoc($query);
-
-} else {
-    echo "Data user tidak ditemukan.";
-}
-
-?>
-
 <!doctype html>
 <html lang="en" class="h-100">
 

@@ -5,7 +5,7 @@
   <title>Register</title>
 
   <!-- Favicon icon -->
-  <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
 
   <!-- Required meta tags -->
   <meta charset="utf-8">
@@ -90,11 +90,11 @@
 
                   </form>
                   
-                  <p align="center">Already have an account? <a href="indexx.php" class="text-warning" style="font-weight:600; text-decoration:none;">Login</a></p>
+                  <p align="center">Already have an account? <a href="/login" class="text-warning" style="font-weight:600; text-decoration:none;">Login</a></p>
 
                 </div>
                 <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
-                  <img src="signup.png" class="img-fluid" alt="Sample image" height="300px" width="500px">
+                  <img src="/assets/img//signup.png" class="img-fluid" alt="Sample image" height="300px" width="500px">
                 </div>
               </div>
             </div>

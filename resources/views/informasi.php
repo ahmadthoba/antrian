@@ -1,31 +1,3 @@
-<?php
-session_start();
-// Koneksi ke database
-
-require_once "connection.php";
-
-// Pastikan user sudah login
-if (!isset($_SESSION['username'])) {
-    // Redirect ke halaman login jika belum login
-    header("Location: indexx.php");
-    exit();
-}
-
-// Ambil email dari session
-$username = $_SESSION['username'];
-
-// Ambil data user berdasarkan email
-$query = mysqli_query($mysqli, "SELECT * FROM tbl_user WHERE username='$username'")
-                               or die('Ada kesalahan pada query: ' . mysqli_error($mysqli));
-
-// Cek jika data ditemukan
-if (mysqli_num_rows($query) > 0) {
-    $data_user = mysqli_fetch_assoc($query);
-  } else {
-    echo "Data user tidak ditemukan.";
-}
- ?>
-
 <!doctype html>
 <html lang="en" class="h-100">
 
@@ -38,7 +10,7 @@ if (mysqli_num_rows($query) > 0) {
   <title>Informasi Puskesmas Tahunan</title>
 
   <!-- Favicon icon -->
-  <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
@@ -68,7 +40,7 @@ if (mysqli_num_rows($query) > 0) {
         <div class="ms-5 ms-md-0 pt-md-3 pb-md-0">
           <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
             <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="../index.php"><i class="bi-house-fill text-success"></i></a></li>
+              <li class="breadcrumb-item"><a href="/"><i class="bi-house-fill text-success"></i></a></li>
               <!-- <li class="breadcrumb-item" aria-current="page">Dashboard</li> -->
               <li class="breadcrumb-item" aria-current="page">Informasi</li>
             </ol>

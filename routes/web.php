@@ -27,5 +27,18 @@ Route::get('/register', function () {
 });
 
 Route::get('/nomor-antrian/index', function () {
-    return view('/nomor-antrian/index');
+    return view('nomor-antrian.index');
 });
+
+Route::get('/nomor-antrian/index_done', function () {
+    return view('nomor-antrian.index_done');
+});
+
+Route::get('/informasi', function () {
+    return view('informasi');
+});
+
+Route::get('/panggilan-antrian/index', function () {
+    return view('panggilan-antrian.index');
+});
+

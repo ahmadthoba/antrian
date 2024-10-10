@@ -61,7 +61,7 @@
               </div>
               <h3>Informasi</h3>
               <p class="mb-4">Halaman Informasi digunakan pasien untuk melihat informasi puskesmas berupa Jadwal Loket Pendaftaran, Jadwal Pelayanan Gawat Darurat, Jenis dan Jadwal Pelayanan.</p>
-              <a href="informasi.php" class="btn btn-success rounded-pill px-4 py-2">
+              <a href="/informasi" class="btn btn-success rounded-pill px-4 py-2">
                 Tampilkan <i class="bi-chevron-right ms-2"></i>
               </a>
             </div>
@@ -86,7 +86,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
 </body>
 
-<a href="welcome.php" class="btn btn-success rounded-pill px-4 py-2">
+<a href="/login" class="btn btn-success rounded-pill px-4 py-2">
 LOGOUT <i class="bi-chevron-right ms-2"></i>
 
 </html>
